@@ -12,7 +12,7 @@ class SubmissionObserver
      */
     public function created(Submission $submission): void
     {
-        SubmissionSaved::dispatch($submission);
+        event(new SubmissionSaved($submission));
     }
 
     /**

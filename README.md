@@ -15,3 +15,6 @@
 
 ## API endpoints
 - POST `http://127.0.0.1:8000/api/submit` (body: {"name": "", "email": "", "message": ""})
+
+## Testing
+- `composer test` or `php artisan test`
